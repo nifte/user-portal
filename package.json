@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "prisma db push & prisma db seed & next",
-    "build": "prisma migrate & next build",
+    "build": "next build",
     "start": "next start",
     "studio": "prisma studio"
   },
