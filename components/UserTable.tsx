@@ -9,7 +9,7 @@ type TableProps = {
 	users: User[]
 }
 
-const Table = ({ users }: TableProps) => {
+const UserTable = ({ users }: TableProps) => {
 	return (
 		<div className="-mx-4 overflow-x-auto">
 			<div className="inline-block min-w-full py-2 align-middle sm:px-4">
@@ -50,4 +50,4 @@ const Table = ({ users }: TableProps) => {
 	)
 }
 
-export default Table
+export default UserTable

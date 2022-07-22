@@ -4,7 +4,7 @@ import { sessionOptions } from 'lib/session'
 import prisma from 'lib/prisma'
 import bcrypt from 'bcrypt'
 
-const GetUsersHandler: NextApiHandler = async (req, res) => {
+const UsersApiHandler: NextApiHandler = async (req, res) => {
 	const userSession = req.session.user
 
 	// Get all users (Admin only)
@@ -143,4 +143,4 @@ const GetUsersHandler: NextApiHandler = async (req, res) => {
 	}
 }
 
-export default withIronSessionApiRoute(GetUsersHandler, sessionOptions)
+export default withIronSessionApiRoute(UsersApiHandler, sessionOptions)

@@ -10,7 +10,7 @@ export type Session = {
 	isAdmin: boolean
 }
 
-const SessionHandler: NextApiHandler = async (req, res) => {
+const SessionApiHandler: NextApiHandler = async (req, res) => {
 	const user = req.session.user
 	if (user) {
 		// User is logged in, show session info
@@ -29,4 +29,4 @@ const SessionHandler: NextApiHandler = async (req, res) => {
 	}
 }
 
-export default withIronSessionApiRoute(SessionHandler, sessionOptions)
+export default withIronSessionApiRoute(SessionApiHandler, sessionOptions)

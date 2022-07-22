@@ -2,7 +2,7 @@ import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import ProfileMenu from './ProfileMenu'
+import ProfileMenu from 'components/ProfileMenu'
 import useSession from 'lib/useSession'
 import LinkButton from 'components/LinkButton'
 
